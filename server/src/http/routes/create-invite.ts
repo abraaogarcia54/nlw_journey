@@ -52,7 +52,7 @@ export const createInvite = async (app: FastifyInstance) => {
 
       const confirmationLink = new URL(
         `planner://trip/${trip.id}?participant=${participant.id}`,
-        "http://192.168.0.156:3000"
+        "http://192.168.237.160:3000"
       )
 
       const message = await mail.sendMail({
