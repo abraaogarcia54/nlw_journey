@@ -1,21 +1,21 @@
-import { colors } from "@/styles/colors"
-import * as Linking from "expo-linking"
-import { Link2 } from "lucide-react-native"
-import { Text, TouchableOpacity, View } from "react-native"
+import { colors } from "@/styles/colors";
+import * as Linking from "expo-linking";
+import { Link2 } from "lucide-react-native";
+import { Text, TouchableOpacity, View } from "react-native";
 
 export type TripLinkProps = {
-  id: string
-  title: string
-  url: string
-}
+  id: string;
+  title: string;
+  url: string;
+};
 
 type Props = {
-  data: TripLinkProps
-}
+  data: TripLinkProps;
+};
 
 export function TripLink({ data }: Props) {
   function handleLinkOpen() {
-    Linking.openURL(data.url)
+    Linking.openURL(data.url);
   }
 
   return (
@@ -33,5 +33,5 @@ export function TripLink({ data }: Props) {
         <Link2 color={colors.zinc[400]} size={20} />
       </TouchableOpacity>
     </View>
-  )
+  );
 }

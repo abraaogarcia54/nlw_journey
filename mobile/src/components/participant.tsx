@@ -1,18 +1,18 @@
-import { CircleCheck, CircleDashed } from "lucide-react-native"
-import { Text, View } from "react-native"
+import { CircleCheck, CircleDashed } from "lucide-react-native";
+import { Text, View } from "react-native";
 
-import { colors } from "@/styles/colors"
+import { colors } from "@/styles/colors";
 
 export type ParticipantProps = {
-  id: string
-  name?: string
-  email: string
-  is_confirmed: boolean
-}
+  id: string;
+  name?: string;
+  email: string;
+  is_confirmed: boolean;
+};
 
 type Props = {
-  data: ParticipantProps
-}
+  data: ParticipantProps;
+};
 
 export function Participant({ data }: Props) {
   return (
@@ -31,5 +31,5 @@ export function Participant({ data }: Props) {
         <CircleDashed color={colors.zinc[400]} size={20} />
       )}
     </View>
-  )
+  );
 }

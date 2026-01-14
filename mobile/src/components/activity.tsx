@@ -1,19 +1,19 @@
-import { CircleCheck, CircleDashed } from "lucide-react-native"
-import { Text, View } from "react-native"
+import { CircleCheck, CircleDashed } from "lucide-react-native";
+import { Text, View } from "react-native";
 
-import { colors } from "@/styles/colors"
-import clsx from "clsx"
+import { colors } from "@/styles/colors";
+import clsx from "clsx";
 
 export type ActivityProps = {
-  id: string
-  title: string
-  hour: string
-  isBefore: boolean
-}
+  id: string;
+  title: string;
+  hour: string;
+  isBefore: boolean;
+};
 
 type Props = {
-  data: ActivityProps
-}
+  data: ActivityProps;
+};
 
 export function Activity({ data }: Props) {
   return (
@@ -35,5 +35,5 @@ export function Activity({ data }: Props) {
 
       <Text className="text-zinc-400 font-regular text-sm">{data.hour}</Text>
     </View>
-  )
+  );
 }
